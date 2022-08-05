@@ -11,7 +11,7 @@ public class LineComparision {
 	
 	static double coords() {
 		Scanner sc= new Scanner(System.in);
-		
+
 		System.out.print("enter the value of x1= ");
 		double x1 = sc.nextDouble();
 
@@ -51,6 +51,7 @@ public class LineComparision {
 			} else {
 				System.out.println("Both Lines are not Equal");
 			}
+
 		}
 			/**
 			 *Method to compare two lines and find the greater
@@ -81,7 +82,7 @@ public class LineComparision {
 			System.out.println("***Welcome to the Line Comparision Computation Program***");
 			
 			compareLength();
-			
-			}
-	      }
+
+		   	}
+	    }
 	
