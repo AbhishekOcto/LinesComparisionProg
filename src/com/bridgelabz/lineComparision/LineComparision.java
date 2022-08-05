@@ -4,13 +4,14 @@ import java.util.Scanner;
 
 /* @author Abhishek
  * 04.08.2022
- * UC2 
+ * UC-3
  * */
 
 public class LineComparision {
 	
 	static double coords() {
 		Scanner sc= new Scanner(System.in);
+
 		System.out.print("enter the value of x1= ");
 		double x1 = sc.nextDouble();
 
@@ -50,14 +51,38 @@ public class LineComparision {
 			} else {
 				System.out.println("Both Lines are not Equal");
 			}
+
+		}
+			/**
+			 *Method to compare two lines and find the greater
+			 *
+			 */
 			
+			static void compareLength() {
+				double line1 = coords();
+				String s1 = Double.toString(line1);
+				double line2 = coords();
+				String s2 = Double.toString(line2);
+				
+				System.out.println("Length of Line 1 : "+s1);
+				System.out.println("Length of Line 2 : "+s2);
+
+					if (s1.compareTo(s2) < 0) {
+					System.out.println("line1 is less than the line2");
+					
+				} else {
+					System.out.println("line1 is greater than the line2");
+					
+				}
+		
 		  }
 	    
 	    
 		public static void main(String[] args) {
 			System.out.println("***Welcome to the Line Comparision Computation Program***");
 			
-			length();
-			}
-	      }
+			compareLength();
+
+		   	}
+	    }
 	
