@@ -3,13 +3,13 @@ package com.bridgelabz.lineComparision;
 import java.util.Scanner;
 
 /* @author Abhishek
- * 04.08.2022
- * UC-3
+ * 10.08.2022
+ * UC-4
  * */
 
 public class LineComparision {
 	
-	static double coords() {
+	 double coordinates() {
 		Scanner sc= new Scanner(System.in);
 
 		System.out.print("enter the value of x1= ");
@@ -39,10 +39,10 @@ public class LineComparision {
 		 * check the equality of two lines.
 		 */
 		
-		public static void length() {
-			double line1 = coords();
+		public void length() {
+			double line1 = coordinates();
 			String s1 = Double.toString(line1);
-			double line2 = coords();
+			double line2 = coordinates();
 			String s2 = Double.toString(line2);
 			System.out.println("Length of Line 1 : "+s1);
 			System.out.println("Length of Line 1 : "+s2);
@@ -58,10 +58,10 @@ public class LineComparision {
 			 *
 			 */
 			
-			static void compareLength() {
-				double line1 = coords();
+		 void compareLength() {
+				double line1 = coordinates();
 				String s1 = Double.toString(line1);
-				double line2 = coords();
+				double line2 = coordinates();
 				String s2 = Double.toString(line2);
 				
 				System.out.println("Length of Line 1 : "+s1);
@@ -77,12 +77,10 @@ public class LineComparision {
 		
 		  }
 	    
-	    
 		public static void main(String[] args) {
 			System.out.println("***Welcome to the Line Comparision Computation Program***");
-			
-			compareLength();
+			LineComparision obj = new LineComparision();	
+			obj.compareLength();
 
 		   	}
 	    }
-	
